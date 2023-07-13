@@ -81,7 +81,7 @@ DATABASES = {
       'NAME': config('NAME'),
       'USER': 'postgres',
       'PASSWORD': config('PASSWORD'),
-      'HOST': 'localhost',
+      'HOST': 'db',
       'PORT': '5432',
    }
 }
