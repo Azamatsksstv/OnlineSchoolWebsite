@@ -10,6 +10,7 @@ from courses.routes.course.deleteCourse import DeleteCourseAPIView
 from courses.routes.lesson.createLesson import CreateLessonAPIView
 from courses.routes.lesson.changeLesson import ChangeLessonAPIView
 from courses.routes.lesson.deleteLesson import DeleteLessonAPIView
+from courses.routes.course.joinToCourse import JoinCourseAPIView
 
 
 urlpatterns = [
@@ -25,4 +26,6 @@ urlpatterns = [
     path('courses/<int:course_id>/lessons/create/', CreateLessonAPIView.as_view(), name='create-lesson'),
     path('courses/<int:course_id>/lessons/<int:lesson_id>/change/', ChangeLessonAPIView.as_view(), name='change-lesson'),
     path('courses/<int:course_id>/lessons/<int:lesson_id>/delete/', DeleteLessonAPIView.as_view(), name='delete-lesson'),
+
+    path('courses/<int:course_id>/join/', JoinCourseAPIView.as_view(), name='join-to-course'),
 ]
