@@ -4,7 +4,7 @@
 # Ignore virtual environment directories
 venv/
 env/
-
+.env
 # Ignore IDE and editor files
 .idea/
 .vscode/
