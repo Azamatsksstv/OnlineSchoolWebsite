@@ -1,0 +1,14 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+
+# Ignore sensitive or private files
+secrets.txt
+credentials.json
