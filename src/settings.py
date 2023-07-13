@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 
     'accounts',
     'courses',
+    'comments',
 
     'rest_framework',
     'django_filters',
